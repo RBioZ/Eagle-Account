@@ -1,0 +1,40 @@
+.container{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.left-content {
+    flex:1;
+    background-color:  #086ba5e0;
+    background-image: url('../../assets/images/background.png') ;
+}
+
+.right-content {
+    min-width: 400px;
+}
+
+#layer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #086ba58c;
+    color:#FFF;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#layer img{
+}
+
+@media (max-width: 700px) {
+    .left-content {
+       display: none;
+    }
+    .right-content {
+        flex:1;
+    }
+  }
