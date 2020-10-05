@@ -7,27 +7,107 @@
 
 .left-content {
     flex:1;
-    background-color:  #086ba5e0;
-    background-image: url('../../assets/images/background.png') ;
+    background-image: url('../../assets/images/background.png');
+    background-size: cover;
 }
 
 .right-content {
-    min-width: 400px;
+    min-width: 450px;
+}
+
+.right-content #img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 #layer{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #086ba58c;
+    background-image: url('../../assets/images/background-style.png');
     color:#FFF;
-    align-items: center;
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-#layer img{
+#layer h1,p{
+  text-align: center;
+}
+#layer h1{
+  margin-bottom: 20px;
+}
+
+#image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 50px;
+  background-color: rgba(7, 52, 91, 0.74);
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+.progress-bar div{
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(266.03deg, #086CA5 5.99%, rgba(60, 174, 239, 0) 117.01%);
+  border-radius: 25px;
+  align-items:center;
+  justify-content: center;
+}
+
+.form-container{
+  margin: 0 20px 0 20px;
+}
+
+.form-input{
+  display:flex;
+  flex-direction: column;
+  margin: 30px 0 30px 0;
+}
+
+.form-container button {
+  background-color: var(--color-blue);
+  color: white;
+  width: 100%;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.form-container button:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+.form-input label {
+  color: var(--color-blue)
+}
+
+.form-input input{
+  font-size: 18px;
+  margin-top: 8px;
+  border: 0px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.form-input input::placeholder{
+  color:#ACACAC
+}
+
+.form-input input:focus {
+  border: 0px;
+  border-bottom: 1px solid var(--color-blue);
 }
 
 @media (max-width: 700px) {
@@ -37,4 +117,4 @@
     .right-content {
         flex:1;
     }
-  }
+}
